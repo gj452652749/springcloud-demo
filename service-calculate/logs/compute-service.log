@@ -1,0 +1,341 @@
+2017-09-14 15:30:02.757  INFO 13380 --- [main] c.p.m.c.CalculateServiceApplication      : No active profile set, falling back to default profiles: default
+2017-09-14 15:30:02.771  INFO 13380 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e057f43: startup date [Thu Sep 14 15:30:02 CST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@43ee72e6
+2017-09-14 15:30:03.350  WARN 13380 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-09-14 15:30:03.456  INFO 13380 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e13491f2-8452-386a-ad9e-e93b46e3b287
+2017-09-14 15:30:03.469  INFO 13380 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-09-14 15:30:03.480  INFO 13380 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$62a8dc44] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-14 15:30:03.806  INFO 13380 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 2223 (http)
+2017-09-14 15:30:03.817  INFO 13380 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-09-14 15:30:03.825  INFO 13380 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.33
+2017-09-14 15:30:03.963  INFO 13380 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-14 15:30:03.964  INFO 13380 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1193 ms
+2017-09-14 15:30:04.281  INFO 13380 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-14 15:30:04.285  INFO 13380 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-14 15:30:04.286  INFO 13380 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-14 15:30:04.287  INFO 13380 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-14 15:30:04.288  INFO 13380 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-14 15:30:04.709  INFO 13380 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e057f43: startup date [Thu Sep 14 15:30:02 CST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@43ee72e6
+2017-09-14 15:30:04.770  INFO 13380 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/add],methods=[GET]}" onto public java.lang.Integer com.pycredit.microservice.calculate.controller.CalculateController.add(java.lang.Integer,java.lang.Integer)
+2017-09-14 15:30:04.775  INFO 13380 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-14 15:30:04.775  INFO 13380 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-14 15:30:04.801  INFO 13380 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-14 15:30:04.801  INFO 13380 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-14 15:30:04.842  INFO 13380 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-14 15:30:05.022  WARN 13380 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-14 15:30:05.026  INFO 13380 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-09-14 15:30:05.032  WARN 13380 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-14 15:30:05.032  INFO 13380 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-09-14 15:30:05.078  INFO 13380 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-14 15:30:05.087  INFO 13380 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2017-09-14 15:30:05.088  INFO 13380 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2017-09-14 15:30:05.089  INFO 13380 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2017-09-14 15:30:05.091  INFO 13380 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2017-09-14 15:30:05.107  INFO 13380 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2017-09-14 15:30:05.113  INFO 13380 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=7e057f43,type=ConfigurationPropertiesRebinder]
+2017-09-14 15:30:05.222  INFO 13380 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-09-14 15:30:05.240  INFO 13380 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2017-09-14 15:30:05.616  INFO 13380 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2017-09-14 15:30:05.618  INFO 13380 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2017-09-14 15:30:05.704  INFO 13380 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2017-09-14 15:30:05.704  INFO 13380 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2017-09-14 15:30:05.901  INFO 13380 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-09-14 15:30:05.960  INFO 13380 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2017-09-14 15:30:05.960  INFO 13380 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2017-09-14 15:30:05.960  INFO 13380 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2017-09-14 15:30:05.964  INFO 13380 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2017-09-14 15:30:05.964  INFO 13380 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2017-09-14 15:30:05.964  INFO 13380 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2017-09-14 15:30:05.964  INFO 13380 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2017-09-14 15:30:06.277  INFO 13380 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2017-09-14 15:30:06.280  INFO 13380 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2017-09-14 15:30:06.283  INFO 13380 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2017-09-14 15:30:06.314  INFO 13380 --- [main] c.n.e.EurekaDiscoveryClientConfiguration : Registering application compute-service with eureka with status UP
+2017-09-14 15:30:06.315  INFO 13380 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1505374206315, current=UP, previous=STARTING]
+2017-09-14 15:30:06.317  INFO 13380 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMPUTE-SERVICE/10.0.72.186:compute-service:2223: registering service...
+2017-09-14 15:30:06.386  INFO 13380 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMPUTE-SERVICE/10.0.72.186:compute-service:2223 - registration status: 204
+2017-09-14 15:30:06.446  INFO 13380 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 2223 (http)
+2017-09-14 15:30:06.447  INFO 13380 --- [main] c.n.e.EurekaDiscoveryClientConfiguration : Updating port to 2223
+2017-09-14 15:30:06.526  INFO 13380 --- [main] c.p.m.c.CalculateServiceApplication      : Started CalculateServiceApplication in 4.753 seconds (JVM running for 5.17)
+2017-09-14 15:30:39.972  INFO 13380 --- [http-nio-2223-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-14 15:30:39.972  INFO 13380 --- [http-nio-2223-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-14 15:30:39.999  INFO 13380 --- [http-nio-2223-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2017-09-14 15:30:40.031  INFO 13380 --- [http-nio-2223-exec-1] c.p.m.c.controller.CalculateController   : /add, host:10.0.72.186, service_id:compute-service, result:30
+2017-09-14 15:30:40.192  INFO 13380 --- [http-nio-2223-exec-3] c.p.m.c.controller.CalculateController   : /add, host:10.0.72.186, service_id:compute-service, result:30
+2017-09-14 15:30:40.229  INFO 13380 --- [http-nio-2223-exec-5] c.p.m.c.controller.CalculateController   : /add, host:10.0.72.186, service_id:compute-service, result:30
+2017-09-14 15:31:31.476  INFO 9428 --- [main] c.p.m.c.CalculateServiceApplication      : No active profile set, falling back to default profiles: default
+2017-09-14 15:31:31.490  INFO 9428 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5890e879: startup date [Thu Sep 14 15:31:31 CST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@43ee72e6
+2017-09-14 15:31:32.096  WARN 9428 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-09-14 15:31:32.211  INFO 9428 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e13491f2-8452-386a-ad9e-e93b46e3b287
+2017-09-14 15:31:32.222  INFO 9428 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-09-14 15:31:32.242  INFO 9428 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$62a8dc44] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-14 15:31:32.562  INFO 9428 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 2223 (http)
+2017-09-14 15:31:32.578  INFO 9428 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-09-14 15:31:32.579  INFO 9428 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.33
+2017-09-14 15:31:32.710  INFO 9428 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-14 15:31:32.711  INFO 9428 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1221 ms
+2017-09-14 15:31:33.039  INFO 9428 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-14 15:31:33.044  INFO 9428 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-14 15:31:33.045  INFO 9428 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-14 15:31:33.045  INFO 9428 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-14 15:31:33.045  INFO 9428 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-14 15:31:33.469  INFO 9428 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5890e879: startup date [Thu Sep 14 15:31:31 CST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@43ee72e6
+2017-09-14 15:31:33.526  INFO 9428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/add],methods=[GET]}" onto public java.lang.Integer com.pycredit.microservice.calculate.controller.CalculateController.add(java.lang.Integer,java.lang.Integer)
+2017-09-14 15:31:33.528  INFO 9428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-14 15:31:33.528  INFO 9428 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-14 15:31:33.559  INFO 9428 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-14 15:31:33.559  INFO 9428 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-14 15:31:33.600  INFO 9428 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-14 15:31:33.792  WARN 9428 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-14 15:31:33.798  INFO 9428 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-09-14 15:31:33.806  WARN 9428 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-14 15:31:33.806  INFO 9428 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-09-14 15:31:33.886  INFO 9428 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-14 15:31:33.921  INFO 9428 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2017-09-14 15:31:33.923  INFO 9428 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2017-09-14 15:31:33.927  INFO 9428 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2017-09-14 15:31:33.936  INFO 9428 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2017-09-14 15:31:33.963  INFO 9428 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2017-09-14 15:31:33.975  INFO 9428 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=5890e879,type=ConfigurationPropertiesRebinder]
+2017-09-14 15:31:34.122  INFO 9428 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-09-14 15:31:34.133  INFO 9428 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2017-09-14 15:31:34.477  INFO 9428 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2017-09-14 15:31:34.478  INFO 9428 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2017-09-14 15:31:34.571  INFO 9428 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2017-09-14 15:31:34.571  INFO 9428 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2017-09-14 15:31:34.782  INFO 9428 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-09-14 15:31:34.839  INFO 9428 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2017-09-14 15:31:34.839  INFO 9428 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2017-09-14 15:31:34.839  INFO 9428 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2017-09-14 15:31:34.839  INFO 9428 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2017-09-14 15:31:34.840  INFO 9428 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2017-09-14 15:31:34.840  INFO 9428 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2017-09-14 15:31:34.840  INFO 9428 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2017-09-14 15:31:35.213  INFO 9428 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2017-09-14 15:31:35.215  INFO 9428 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2017-09-14 15:31:35.219  INFO 9428 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2017-09-14 15:31:35.246  INFO 9428 --- [main] c.n.e.EurekaDiscoveryClientConfiguration : Registering application compute-service with eureka with status UP
+2017-09-14 15:31:35.247  INFO 9428 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1505374295247, current=UP, previous=STARTING]
+2017-09-14 15:31:35.253  INFO 9428 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMPUTE-SERVICE/10.0.72.186:compute-service:2223: registering service...
+2017-09-14 15:31:35.300  INFO 9428 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMPUTE-SERVICE/10.0.72.186:compute-service:2223 - registration status: 204
+2017-09-14 15:31:35.337  INFO 9428 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 2223 (http)
+2017-09-14 15:31:35.343  INFO 9428 --- [main] c.n.e.EurekaDiscoveryClientConfiguration : Updating port to 2223
+2017-09-14 15:31:35.346  INFO 9428 --- [main] c.p.m.c.CalculateServiceApplication      : Started CalculateServiceApplication in 4.874 seconds (JVM running for 5.309)
+2017-09-14 15:31:49.476  INFO 9428 --- [http-nio-2223-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-14 15:31:49.479  INFO 9428 --- [http-nio-2223-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-14 15:31:49.525  INFO 9428 --- [http-nio-2223-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 42 ms
+2017-09-14 15:31:49.574  INFO 9428 --- [http-nio-2223-exec-1] c.p.m.c.controller.CalculateController   : /add, host:10.0.72.186, service_id:compute-service, result:30
+2017-09-14 15:31:49.652  INFO 9428 --- [http-nio-2223-exec-3] c.p.m.c.controller.CalculateController   : /add, host:10.0.72.186, service_id:compute-service, result:30
+2017-09-14 15:31:49.677  INFO 9428 --- [http-nio-2223-exec-5] c.p.m.c.controller.CalculateController   : /add, host:10.0.72.186, service_id:compute-service, result:30
+2017-09-14 15:34:20.984  INFO 14244 --- [main] c.p.m.c.CalculateServiceApplication      : No active profile set, falling back to default profiles: default
+2017-09-14 15:34:20.998  INFO 14244 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5890e879: startup date [Thu Sep 14 15:34:20 CST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@43ee72e6
+2017-09-14 15:34:21.645  WARN 14244 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-09-14 15:34:21.739  INFO 14244 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e13491f2-8452-386a-ad9e-e93b46e3b287
+2017-09-14 15:34:21.764  INFO 14244 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-09-14 15:34:21.774  INFO 14244 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$62a8dc44] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-14 15:34:22.129  INFO 14244 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 2223 (http)
+2017-09-14 15:34:22.144  INFO 14244 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-09-14 15:34:22.150  INFO 14244 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.33
+2017-09-14 15:34:22.280  INFO 14244 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-14 15:34:22.281  INFO 14244 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1283 ms
+2017-09-14 15:34:22.807  INFO 14244 --- [localhost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-14 15:34:22.823  INFO 14244 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-14 15:34:22.824  INFO 14244 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-14 15:34:22.825  INFO 14244 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-14 15:34:22.826  INFO 14244 --- [localhost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-14 15:34:23.357  INFO 14244 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5890e879: startup date [Thu Sep 14 15:34:20 CST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@43ee72e6
+2017-09-14 15:34:23.435  INFO 14244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/add],methods=[GET]}" onto public java.lang.Integer com.pycredit.microservice.calculate.controller.CalculateController.add(java.lang.Integer,java.lang.Integer)
+2017-09-14 15:34:23.438  INFO 14244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-14 15:34:23.438  INFO 14244 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-14 15:34:23.469  INFO 14244 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-14 15:34:23.470  INFO 14244 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-14 15:34:23.504  INFO 14244 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-14 15:34:23.695  WARN 14244 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-14 15:34:23.700  INFO 14244 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-09-14 15:34:23.707  WARN 14244 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-14 15:34:23.707  INFO 14244 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-09-14 15:34:23.757  INFO 14244 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-14 15:34:23.764  INFO 14244 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2017-09-14 15:34:23.765  INFO 14244 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2017-09-14 15:34:23.767  INFO 14244 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2017-09-14 15:34:23.769  INFO 14244 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2017-09-14 15:34:23.791  INFO 14244 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2017-09-14 15:34:23.810  INFO 14244 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=5890e879,type=ConfigurationPropertiesRebinder]
+2017-09-14 15:34:23.974  INFO 14244 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-09-14 15:34:23.984  INFO 14244 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2017-09-14 15:34:24.413  INFO 14244 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2017-09-14 15:34:24.414  INFO 14244 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2017-09-14 15:34:24.531  INFO 14244 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2017-09-14 15:34:24.531  INFO 14244 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2017-09-14 15:34:24.734  INFO 14244 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-09-14 15:34:24.812  INFO 14244 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2017-09-14 15:34:24.813  INFO 14244 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2017-09-14 15:34:24.813  INFO 14244 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2017-09-14 15:34:24.819  INFO 14244 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2017-09-14 15:34:24.819  INFO 14244 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2017-09-14 15:34:24.819  INFO 14244 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2017-09-14 15:34:24.819  INFO 14244 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2017-09-14 15:34:25.858  INFO 14244 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2017-09-14 15:34:25.863  INFO 14244 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2017-09-14 15:34:25.867  INFO 14244 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2017-09-14 15:34:26.125  INFO 14244 --- [main] c.n.e.EurekaDiscoveryClientConfiguration : Registering application compute-service with eureka with status UP
+2017-09-14 15:34:26.134  INFO 14244 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1505374466134, current=UP, previous=STARTING]
+2017-09-14 15:34:26.154  INFO 14244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMPUTE-SERVICE/10.0.72.186:compute-service:2223: registering service...
+2017-09-14 15:34:26.401  INFO 14244 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 2223 (http)
+2017-09-14 15:34:26.402  INFO 14244 --- [main] c.n.e.EurekaDiscoveryClientConfiguration : Updating port to 2223
+2017-09-14 15:34:26.411  INFO 14244 --- [main] c.p.m.c.CalculateServiceApplication      : Started CalculateServiceApplication in 6.501 seconds (JVM running for 6.959)
+2017-09-14 15:34:26.558  INFO 14244 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMPUTE-SERVICE/10.0.72.186:compute-service:2223 - registration status: 204
+2017-09-14 15:34:45.817  INFO 14244 --- [http-nio-2223-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-14 15:34:45.817  INFO 14244 --- [http-nio-2223-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-14 15:34:45.868  INFO 14244 --- [http-nio-2223-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+2017-09-14 15:34:45.918  INFO 14244 --- [http-nio-2223-exec-1] c.p.m.c.controller.CalculateController   : /add, host:10.0.72.186, service_id:compute-service, result:30
+2017-09-14 15:34:52.730  INFO 14244 --- [http-nio-2223-exec-3] c.p.m.c.controller.CalculateController   : /add, host:10.0.72.186, service_id:compute-service, result:30
+2017-09-14 15:34:54.064  INFO 14244 --- [http-nio-2223-exec-5] c.p.m.c.controller.CalculateController   : /add, host:10.0.72.186, service_id:compute-service, result:30
+2017-09-14 15:34:54.862  INFO 14244 --- [http-nio-2223-exec-7] c.p.m.c.controller.CalculateController   : /add, host:10.0.72.186, service_id:compute-service, result:30
+2017-09-14 15:34:55.570  INFO 14244 --- [http-nio-2223-exec-9] c.p.m.c.controller.CalculateController   : /add, host:10.0.72.186, service_id:compute-service, result:30
+2017-09-14 15:34:55.864  INFO 14244 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2017-09-14 15:34:55.868  INFO 14244 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2017-09-14 15:34:55.873  INFO 14244 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2017-09-14 15:34:55.873  INFO 14244 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2017-09-14 15:34:55.878  INFO 14244 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2017-09-14 15:34:55.878  INFO 14244 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2017-09-14 15:34:55.886  INFO 14244 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2017-09-14 15:34:55.927  INFO 14244 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2017-09-14 15:34:56.216  INFO 14244 --- [http-nio-2223-exec-1] c.p.m.c.controller.CalculateController   : /add, host:10.0.72.186, service_id:compute-service, result:30
+2017-09-14 15:34:56.867  INFO 14244 --- [http-nio-2223-exec-3] c.p.m.c.controller.CalculateController   : /add, host:10.0.72.186, service_id:compute-service, result:30
+2017-09-14 15:34:57.510  INFO 14244 --- [http-nio-2223-exec-5] c.p.m.c.controller.CalculateController   : /add, host:10.0.72.186, service_id:compute-service, result:30
+2017-09-14 15:34:58.100  INFO 14244 --- [http-nio-2223-exec-7] c.p.m.c.controller.CalculateController   : /add, host:10.0.72.186, service_id:compute-service, result:30
+2017-09-14 15:34:58.681  INFO 14244 --- [http-nio-2223-exec-9] c.p.m.c.controller.CalculateController   : /add, host:10.0.72.186, service_id:compute-service, result:30
+2017-09-14 15:38:32.503  INFO 2876 --- [main] c.p.m.c.CalculateServiceApplication      : No active profile set, falling back to default profiles: default
+2017-09-14 15:38:33.115  WARN 2876 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-09-14 15:38:33.209  INFO 2876 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e13491f2-8452-386a-ad9e-e93b46e3b287
+2017-09-14 15:38:33.225  INFO 2876 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-09-14 15:38:33.233  INFO 2876 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [class org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$62a8dc44] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-14 15:38:33.576  INFO 2876 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-09-14 15:38:33.583  INFO 2876 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.33
+2017-09-14 15:38:33.720  INFO 2876 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-14 15:38:33.721  INFO 2876 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1199 ms
+2017-09-14 15:38:34.444  INFO 2876 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5890e879: startup date [Thu Sep 14 15:38:32 CST 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@43ee72e6
+2017-09-14 15:38:34.504  INFO 2876 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/add],methods=[GET]}" onto public java.lang.Integer com.pycredit.microservice.calculate.controller.CalculateController.add(java.lang.Integer,java.lang.Integer)
+2017-09-14 15:38:34.508  INFO 2876 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-14 15:38:34.514  INFO 2876 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-14 15:38:34.542  INFO 2876 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-14 15:38:34.542  INFO 2876 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-14 15:38:34.577  INFO 2876 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-14 15:38:34.746  WARN 2876 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-14 15:38:34.754  INFO 2876 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-09-14 15:38:34.761  WARN 2876 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-14 15:38:34.761  INFO 2876 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2017-09-14 15:38:34.807  INFO 2876 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-14 15:38:34.816  INFO 2876 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2017-09-14 15:38:34.816  INFO 2876 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2017-09-14 15:38:34.819  INFO 2876 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2017-09-14 15:38:34.826  INFO 2876 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2017-09-14 15:38:34.838  INFO 2876 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2017-09-14 15:38:34.844  INFO 2876 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=5890e879,type=ConfigurationPropertiesRebinder]
+2017-09-14 15:38:34.931  INFO 2876 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-09-14 15:38:34.945  INFO 2876 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2017-09-14 15:38:35.289  INFO 2876 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2017-09-14 15:38:35.291  INFO 2876 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2017-09-14 15:38:35.379  INFO 2876 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2017-09-14 15:38:35.383  INFO 2876 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2017-09-14 15:38:35.563  INFO 2876 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2017-09-14 15:38:35.617  INFO 2876 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2017-09-14 15:38:35.618  INFO 2876 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2017-09-14 15:38:35.618  INFO 2876 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2017-09-14 15:38:35.618  INFO 2876 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2017-09-14 15:38:35.618  INFO 2876 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2017-09-14 15:38:35.618  INFO 2876 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2017-09-14 15:38:35.630  INFO 2876 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2017-09-14 15:38:35.957  INFO 2876 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2017-09-14 15:38:35.963  INFO 2876 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2017-09-14 15:38:35.967  INFO 2876 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2017-09-14 15:38:36.008  INFO 2876 --- [main] c.n.e.EurekaDiscoveryClientConfiguration : Registering application compute-service with eureka with status UP
+2017-09-14 15:38:36.010  INFO 2876 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1505374716010, current=UP, previous=STARTING]
+2017-09-14 15:38:36.013  INFO 2876 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMPUTE-SERVICE/10.0.72.186:compute-service:2223: registering service...
+2017-09-14 15:38:36.195  INFO 2876 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_COMPUTE-SERVICE/10.0.72.186:compute-service:2223 - registration status: 204
+2017-09-14 15:38:36.202  INFO 2876 --- [main] c.n.e.EurekaDiscoveryClientConfiguration : Updating port to 2223
+2017-09-14 15:38:36.228  INFO 2876 --- [main] c.p.m.c.CalculateServiceApplication      : Started CalculateServiceApplication in 4.727 seconds (JVM running for 5.265)
+2017-09-14 15:39:54.141  INFO 2876 --- [http-nio-2223-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-14 15:39:54.145  INFO 2876 --- [http-nio-2223-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-14 15:39:54.164  INFO 2876 --- [http-nio-2223-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2017-09-14 15:39:54.193  INFO 2876 --- [http-nio-2223-exec-1] c.p.m.c.controller.CalculateController   : /add, host:10.0.72.186, service_id:compute-service, result:30
+2017-09-14 15:40:00.284  INFO 2876 --- [http-nio-2223-exec-3] c.p.m.c.controller.CalculateController   : /add, host:10.0.72.186, service_id:compute-service, result:30
+2017-09-14 15:40:02.276  INFO 2876 --- [http-nio-2223-exec-5] c.p.m.c.controller.CalculateController   : /add, host:10.0.72.186, service_id:compute-service, result:30
+2017-09-14 15:41:54.113  WARN 8748 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-09-14 15:41:55.756  WARN 8748 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-14 15:41:55.768  WARN 8748 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-14 15:52:09.919  WARN 14032 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-09-14 15:52:11.934  WARN 14032 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-14 15:52:11.945  WARN 14032 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-14 16:01:25.830  WARN 8092 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-09-14 16:01:27.905  WARN 8092 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-14 16:01:27.919  WARN 8092 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-14 16:05:41.733  WARN 12672 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-09-14 16:05:43.555  WARN 12672 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-14 16:05:43.569  WARN 12672 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-14 16:25:49.889  WARN 8340 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-09-14 16:25:51.692  WARN 8340 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-14 16:25:51.705  WARN 8340 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-15 11:07:15.906  WARN [compute-service,,,] 4312 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-09-15 11:07:20.452  WARN [compute-service,,,] 4312 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-15 11:07:20.468  WARN [compute-service,,,] 4312 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-15 11:47:24.323  WARN [compute-service,,,] 13924 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-09-15 11:47:30.006  WARN [compute-service,,,] 13924 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-15 11:47:30.028  WARN [compute-service,,,] 13924 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-15 11:53:17.041  WARN [compute-service,,,] 10224 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-09-15 11:53:21.926  WARN [compute-service,,,] 10224 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-15 11:53:21.945  WARN [compute-service,,,] 10224 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-15 15:57:15.905  WARN [compute-service,,,] 7520 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-09-15 15:57:51.786  WARN [compute-service,,,] 11908 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-09-15 15:57:58.494  WARN [compute-service,,,] 11908 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-15 15:57:58.564  WARN [compute-service,,,] 11908 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-15 16:19:38.107  WARN [compute-service,,,] 15048 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-09-15 16:19:43.094  WARN [compute-service,,,] 15048 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-15 16:19:43.173  WARN [compute-service,,,] 15048 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-15 16:24:36.422  WARN [compute-service,,,] 12744 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-09-15 16:24:36.747  WARN [compute-service,,,] 12744 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'embeddedServletContainerCustomizerBeanPostProcessor': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/reflect/ReflectionWorld$ReflectionWorldException
+2017-09-15 16:24:36.753 ERROR [compute-service,,,] 12744 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'embeddedServletContainerCustomizerBeanPostProcessor': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/reflect/ReflectionWorld$ReflectionWorldException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:478) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:240) ~[spring-context-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:523) ~[spring-context-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118) ~[spring-boot-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766) ~[spring-boot-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361) ~[spring-boot-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:134) [spring-boot-1.3.5.RELEASE.jar:1.3.5.RELEASE]
+	at com.pycredit.microservice.calculate.CalculateServiceApplication.main(CalculateServiceApplication.java:11) [classes/:na]
+Caused by: java.lang.NoClassDefFoundError: org/aspectj/weaver/reflect/ReflectionWorld$ReflectionWorldException
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getPointcut(ReflectiveAspectJAdvisorFactory.java:195) ~[spring-aop-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisor(ReflectiveAspectJAdvisorFactory.java:178) ~[spring-aop-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisors(ReflectiveAspectJAdvisorFactory.java:109) ~[spring-aop-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.aop.aspectj.annotation.BeanFactoryAspectJAdvisorsBuilder.buildAspectJAdvisors(BeanFactoryAspectJAdvisorsBuilder.java:109) ~[spring-aop-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:87) ~[spring-aop-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103) ~[spring-aop-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248) ~[spring-aop-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:988) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:959) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:472) ~[spring-beans-4.2.6.RELEASE.jar:4.2.6.RELEASE]
+	... 13 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.aspectj.weaver.reflect.ReflectionWorld$ReflectionWorldException
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[na:1.8.0_144]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[na:1.8.0_144]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[na:1.8.0_144]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[na:1.8.0_144]
+	... 23 common frames omitted
+
+2017-09-15 16:33:29.625  WARN [compute-service,,,] 824 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-09-15 16:33:35.766  WARN [compute-service,,,] 824 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-15 16:33:35.782  WARN [compute-service,,,] 824 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-15 16:49:06.791  WARN [compute-service,,,] 12948 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-09-15 16:49:11.608  WARN [compute-service,,,] 12948 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-15 16:49:11.634  WARN [compute-service,,,] 12948 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-15 17:33:17.068  WARN [compute-service,,,] 5088 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-09-15 17:33:27.333  WARN [compute-service,,,] 5088 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2017-09-15 17:33:27.370  WARN [compute-service,,,] 5088 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
